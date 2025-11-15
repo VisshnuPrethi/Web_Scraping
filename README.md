@@ -85,9 +85,4 @@ project-folder/
   Add hyperlink extraction (company Wikipedia links) for richer metadata.
   
   Build a Jupyter Notebook to perform exploratory data analysis (EDA) and visualization of the 2025 dataset.
-  
-  Automate regular updates (e.g., when new annual data appears) via scheduling (cron, GitHub Actions).
 
-📄 License
-
-  This project is released under the MIT License.

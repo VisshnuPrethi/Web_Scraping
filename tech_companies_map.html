@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_15f5f16e8a73cfc7120d1801184de51f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_15f5f16e8a73cfc7120d1801184de51f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_15f5f16e8a73cfc7120d1801184de51f = L.map(
+                "map_15f5f16e8a73cfc7120d1801184de51f",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_53cbb4a4a878f134a3bbe31c7ab2e506 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_53cbb4a4a878f134a3bbe31c7ab2e506.addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            var circle_marker_790159846785bc75165eb35edbfd39ad = L.circleMarker(
+                [38.851289449999996, -77.03968893913375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_790159846785bc75165eb35edbfd39ad.bindTooltip(
+                `<div>
+                     
+    <b>Amazon</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Seattle, Washington & Arlington, Virginia, US<br>
+    <b>Revenue:</b> $637.9 B<br>
+    <b>Employees:</b> 1,556,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50bac33133a53ada6c60981003917862 = L.circleMarker(
+                [37.3228934, -122.0322895],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_50bac33133a53ada6c60981003917862.bindTooltip(
+                `<div>
+                     
+    <b>Apple</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Cupertino, California, US<br>
+    <b>Revenue:</b> $416.0 B<br>
+    <b>Employees:</b> 166,100
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_899fdc0ec7709ae6152f106205f901c6 = L.circleMarker(
+                [37.3893889, -122.0832101],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_899fdc0ec7709ae6152f106205f901c6.bindTooltip(
+                `<div>
+                     
+    <b>Alphabet</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Mountain View, California, US<br>
+    <b>Revenue:</b> $350.0 B<br>
+    <b>Employees:</b> 190,167
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9c8ab4217e24adca6d190a4ffe7d506 = L.circleMarker(
+                [47.6694141, -122.1238767],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_c9c8ab4217e24adca6d190a4ffe7d506.bindTooltip(
+                `<div>
+                     
+    <b>Microsoft</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Redmond, Washington, US<br>
+    <b>Revenue:</b> $281.7 B<br>
+    <b>Employees:</b> 228,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43d27865f5a97429e1b6c8f76a0919bc = L.circleMarker(
+                [37.2633325, 127.0287472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_43d27865f5a97429e1b6c8f76a0919bc.bindTooltip(
+                `<div>
+                     
+    <b>Samsung Electronics</b><br>
+    <b>Country:</b> South Korea<br>
+    <b>Headquarters:</b> Suwon, South Korea<br>
+    <b>Revenue:</b> $220.3 B<br>
+    <b>Employees:</b> 270,372
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a11b2f41b939d65774031007967eb6f = L.circleMarker(
+                [25.063267, 121.45788],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_0a11b2f41b939d65774031007967eb6f.bindTooltip(
+                `<div>
+                     
+    <b>Foxconn</b><br>
+    <b>Country:</b> Taiwan<br>
+    <b>Headquarters:</b> New Taipei City, Taiwan<br>
+    <b>Revenue:</b> $213.9 B<br>
+    <b>Employees:</b> 767,062
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f8190d4ecaefd015473c81e9225bb82 = L.circleMarker(
+                [37.4519671, -122.177992],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_2f8190d4ecaefd015473c81e9225bb82.bindTooltip(
+                `<div>
+                     
+    <b>Meta</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Menlo Park, California, US<br>
+    <b>Revenue:</b> $164.5 B<br>
+    <b>Employees:</b> 78,450
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7509cc125fab40cbea65d7a1cdebe0a4 = L.circleMarker(
+                [40.190632, 116.412144],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_7509cc125fab40cbea65d7a1cdebe0a4.bindTooltip(
+                `<div>
+                     
+    <b>Jingdong</b><br>
+    <b>Country:</b> China<br>
+    <b>Headquarters:</b> Beijing, China<br>
+    <b>Revenue:</b> $158.8 B<br>
+    <b>Employees:</b> 620,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b93b5b301ba76022f2d298a2c67ad47 = L.circleMarker(
+                [19.2953549, -81.3807776],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_9b93b5b301ba76022f2d298a2c67ad47.bindTooltip(
+                `<div>
+                     
+    <b>Alibaba</b><br>
+    <b>Country:</b> China<br>
+    <b>Headquarters:</b> Hangzhou, China & George Town, Cayman Islands<br>
+    <b>Revenue:</b> $137.3 B<br>
+    <b>Employees:</b> 124,320
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69fc8f95c0fd21e230d50ed80fe6885c = L.circleMarker(
+                [37.3688301, -122.036349],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_69fc8f95c0fd21e230d50ed80fe6885c.bindTooltip(
+                `<div>
+                     
+    <b>Nvidia</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Sunnyvale, California, US<br>
+    <b>Revenue:</b> $130.5 B<br>
+    <b>Employees:</b> 36,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_116649ce08bee344061b45f9fd051cb8 = L.circleMarker(
+                [32.7762719, -96.7968559],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_116649ce08bee344061b45f9fd051cb8.bindTooltip(
+                `<div>
+                     
+    <b>AT&T</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Dallas, Texas, US<br>
+    <b>Revenue:</b> $122.3 B<br>
+    <b>Employees:</b> 140,990
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9acf3ec5f729a8d9f475acdfc3893e35 = L.circleMarker(
+                [22.5445741, 114.0545429],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_9acf3ec5f729a8d9f475acdfc3893e35.bindTooltip(
+                `<div>
+                     
+    <b>Huawei</b><br>
+    <b>Country:</b> China<br>
+    <b>Headquarters:</b> Shenzhen, China<br>
+    <b>Revenue:</b> $118.1 B<br>
+    <b>Employees:</b> 208,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9def4bfa53d42eed7798586fa418abb6 = L.circleMarker(
+                [50.7352621, 7.1024635],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_9def4bfa53d42eed7798586fa418abb6.bindTooltip(
+                `<div>
+                     
+    <b>Deutsche Telekom</b><br>
+    <b>Country:</b> Germany<br>
+    <b>Headquarters:</b> Bonn, Germany<br>
+    <b>Revenue:</b> $112.0 B<br>
+    <b>Employees:</b> 205,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_356ea3ee4ff49835f6fd5a86442fdb36 = L.circleMarker(
+                [30.5085915, -97.6788056],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_356ea3ee4ff49835f6fd5a86442fdb36.bindTooltip(
+                `<div>
+                     
+    <b>Dell Technologies</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Round Rock, Texas, US<br>
+    <b>Revenue:</b> $95.6 B<br>
+    <b>Employees:</b> 108,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee185c89375b84f74551b60ce8b602fb = L.circleMarker(
+                [22.5445741, 114.0545429],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_ee185c89375b84f74551b60ce8b602fb.bindTooltip(
+                `<div>
+                     
+    <b>Tencent</b><br>
+    <b>Country:</b> China<br>
+    <b>Headquarters:</b> Shenzhen, China<br>
+    <b>Revenue:</b> $91.8 B<br>
+    <b>Employees:</b> 105,417
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f37226ad6a190292df1aeb5be169781e = L.circleMarker(
+                [35.6768601, 139.7638947],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_f37226ad6a190292df1aeb5be169781e.bindTooltip(
+                `<div>
+                     
+    <b>Sony</b><br>
+    <b>Country:</b> Japan<br>
+    <b>Headquarters:</b> Tokyo, Japan<br>
+    <b>Revenue:</b> $90.1 B<br>
+    <b>Employees:</b> 11,300
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76a8f14fc9e570a66a987309b57adc8e = L.circleMarker(
+                [25.063267, 121.45788],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_76a8f14fc9e570a66a987309b57adc8e.bindTooltip(
+                `<div>
+                     
+    <b>TSMC</b><br>
+    <b>Country:</b> Taiwan<br>
+    <b>Headquarters:</b> New Taipei City, Taiwan<br>
+    <b>Revenue:</b> $88.3 B<br>
+    <b>Employees:</b> 83,825
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49562811bacade3913f302a132a4c68a = L.circleMarker(
+                [35.6768601, 139.7638947],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_49562811bacade3913f302a132a4c68a.bindTooltip(
+                `<div>
+                     
+    <b>Hitachi</b><br>
+    <b>Country:</b> Japan<br>
+    <b>Headquarters:</b> Tokyo, Japan<br>
+    <b>Revenue:</b> $80.39 B<br>
+    <b>Employees:</b> 322,525
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5deb8a344c964ee06e811a123aba569b = L.circleMarker(
+                [35.8411063830443, -78.85982392188723],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_5deb8a344c964ee06e811a123aba569b.bindTooltip(
+                `<div>
+                     
+    <b>Lenovo</b><br>
+    <b>Country:</b> Hong Kong/ US<br>
+    <b>Headquarters:</b> Hong Kong China/Morrisville, North Carolina, US<br>
+    <b>Revenue:</b> $69.0 B<br>
+    <b>Employees:</b> 72,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f922fc1b3fa96a7a687784be7fe2009 = L.circleMarker(
+                [42.4025728, -76.9088495],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_9f922fc1b3fa96a7a687784be7fe2009.bindTooltip(
+                `<div>
+                     
+    <b>Accenture</b><br>
+    <b>Country:</b> Ireland/ US<br>
+    <b>Headquarters:</b> Dublin, Ireland/New York, US<br>
+    <b>Revenue:</b> $64.9 B<br>
+    <b>Employees:</b> 774,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91011951e71dfe3b63d81e50a605f92e = L.circleMarker(
+                [41.132973, -73.7126064],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_91011951e71dfe3b63d81e50a605f92e.bindTooltip(
+                `<div>
+                     
+    <b>IBM</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Armonk, New York, US<br>
+    <b>Revenue:</b> $62.7 B<br>
+    <b>Employees:</b> 270,300
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a3acd1a79f6825cf11516f213162f7b = L.circleMarker(
+                [37.5666791, 126.9782914],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_4a3acd1a79f6825cf11516f213162f7b.bindTooltip(
+                `<div>
+                     
+    <b>LG Electronics</b><br>
+    <b>Country:</b> South Korea<br>
+    <b>Headquarters:</b> Seoul, South Korea<br>
+    <b>Revenue:</b> $57.7 B<br>
+    <b>Employees:</b> 75,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef6eeab8f600c8ed5662dd15313398f6 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_ef6eeab8f600c8ed5662dd15313398f6.bindTooltip(
+                `<div>
+                     
+    <b>Oracle</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> Austin, Texas, US<br>
+    <b>Revenue:</b> $57.4 B<br>
+    <b>Employees:</b> 162,000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb8b0362f342d34f19b0390272b4b234 = L.circleMarker(
+                [37.3361663, -121.890591],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_cb8b0362f342d34f19b0390272b4b234.bindTooltip(
+                `<div>
+                     
+    <b>Cisco</b><br>
+    <b>Country:</b> US<br>
+    <b>Headquarters:</b> San Jose, California, US<br>
+    <b>Revenue:</b> $56.7 B<br>
+    <b>Employees:</b> 86,200
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04e6eb4f9e3cadc977e0f18cc2c2a633 = L.circleMarker(
+                [34.739496, 135.5869107],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_15f5f16e8a73cfc7120d1801184de51f);
+        
+    
+            circle_marker_04e6eb4f9e3cadc977e0f18cc2c2a633.bindTooltip(
+                `<div>
+                     
+    <b>Panasonic</b><br>
+    <b>Country:</b> Japan<br>
+    <b>Headquarters:</b> Kadoma, Osaka, Japan<br>
+    <b>Revenue:</b> $55.3 B<br>
+    <b>Employees:</b> 228,420
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
